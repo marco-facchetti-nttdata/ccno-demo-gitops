@@ -41,14 +41,14 @@ jobs:
         run: |
           sed -i \
             "s/newTag: .*/newTag: ${IMAGE_TAG}/" \
-            demo-app/k8s/overlays/local/kustomization.yaml
+            k8s/overlays/local/kustomization.yaml
 
       - name: Commit deployment configuration
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add demo-app/k8s/overlays/local/kustomization.yaml
+          git add k8s/overlays/local/kustomization.yaml
 
           if git diff --cached --quiet; then
             echo "No deployment changes"
