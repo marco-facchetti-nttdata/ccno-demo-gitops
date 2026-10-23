@@ -6,7 +6,7 @@ resources:
 images:
   - name: ccno-demo
     newName: localhost:5001/ccno-demo
-    newTag: 130d849
+    newTag: 6293fea
 replicas:
   - name: ccno-demo
     count: 1
