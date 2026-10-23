@@ -1,4 +1,5 @@
 name: Build and Deploy CCNO Demo
+
 on:
   push:
     branches:
@@ -40,7 +41,7 @@ jobs:
         run: |
           sed -i \
             "s/newTag: .*/newTag: ${IMAGE_TAG}/" \
-            demo-app/k8s/overlays/local/kustomization.yaml
+            k8s/overlays/local-test/kustomization.yaml
 
       - name: Commit deployment configuration
         run: |
