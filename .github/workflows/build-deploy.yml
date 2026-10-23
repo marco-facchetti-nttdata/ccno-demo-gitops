@@ -40,7 +40,7 @@ jobs:
         run: |
           sed -i \
             "s/newTag: .*/newTag: ${IMAGE_TAG}/" \
-            k8s/overlays/local/kustomization.yaml
+            demo-app/k8s/overlays/local/kustomization.yaml
 
       - name: Commit deployment configuration
         run: |
