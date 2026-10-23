@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - "demo-app/app/**"
-      - "demo-app/Dockerfile"
+      - "app/**"
+      - "Dockerfile"
       - ".github/workflows/build-deploy.yml"
 
 permissions:
