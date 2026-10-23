@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/stefanomartinenghi/ccno-demo-gitops.git
+    repoURL: https://github.com/marco-facchetti-nttdata/ccno-demo-gitops.git
     targetRevision: main
     path: demo-app/k8s/overlays/local
   destination:
